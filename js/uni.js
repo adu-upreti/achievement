@@ -53,3 +53,42 @@ window.addEventListener('resize', function() {
         });
     }
 });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxNvwk_vj5SiZe05KS6oNnPlzbKO1OYL2lW2E5N0BP6cB8sjp-SpFplvToHKhuiyXQ/exec";
+
+    function handleFormSubmit(formId) {
+        const form = document.getElementById(formId);
+        if (!form) return;
+
+        form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+            method: "POST",
+            body: formData,
+            });
+
+            const result = await response.text();
+            console.log(formId + " response:", result);
+
+            // JS popup success
+            alert("✅ Successfully sent!");
+
+            // Reset form
+            form.reset();
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            // JS popup failure
+            alert("❌ Something went wrong. Please try again.");
+        }
+        });
+    }
+
+    // Attach to both forms
+    handleFormSubmit("queryForm");
+    handleFormSubmit("contactForm");
+    });
