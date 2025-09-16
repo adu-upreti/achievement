@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Unicat project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bootstrap4/bootstrap.min.css"
+    />
+    <link
+      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/contact_responsive.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/uni.css" />
+  </head>
+  <body>
+    <div class="super_container">
+      <!-- Header -->
+
+      <header class="header">
+        <!-- Top Bar -->
+        <div class="top_bar">
+          <div class="top_bar_container">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="top_bar_content d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <ul class="top_bar_contact_list">
+                      <li><div class="question">Have any questions?</div></li>
+                      <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div>+977 984-5608394</div>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div>info@achievementeducation.com</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="header_content d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="logo_container">
+                    <a href="index.html" class="logo">
+                      <img src="images/logo.svg" alt="Logo" class="logo_img" />
+                    </a>
+                  </div>
+                  <nav class="main_nav_contaner ml-auto">
+                    <ul class="main_nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li class="menu_mm university-dropdown">
+                        <a
+                          href="#"
+                          class="university-toggle"
+                          onclick="toggleUniversityDropdown(event)"
+                        >
+                          Universities <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="university-submenu">
+                          <li><a href="uk.html">Study in UK</a></li>
+                          <li><a href="usa.html">Study in USA</a></li>
+                          <li><a href="canada.html">Study in Canada</a></li>
+                          <li>
+                            <a href="australia.html">Study in Australia</a>
+                          </li>
+                          <li>
+                            <a href="new-zealand.html">Study in New Zealand</a>
+                          </li>
+                          <li>
+                            <a href="south-korea.html">Study in South Korea</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="hamburger menu_mm">
+                      <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Menu -->
+
+      <div
+        class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400"
+      >
+        <div class="menu_close_container">
+          <div class="menu_close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <nav class="menu_nav">
+          <ul class="menu_mm">
+            <li class="menu_mm"><a href="index.html">Home</a></li>
+            <li class="menu_mm"><a href="about.html">About</a></li>
+            <li class="menu_mm university-dropdown">
+              <a
+                href="#"
+                class="university-toggle"
+                onclick="toggleUniversityDropdown(event)"
+              >
+                Universities <span class="dropdown-arrow">▼</span>
+              </a>
+              <ul class="university-submenu">
+                <li><a href="uk.html">Study in UK</a></li>
+                <li><a href="usa.html">Study in USA</a></li>
+                <li><a href="canada.html">Study in Canada</a></li>
+                <li><a href="australia.html">Study in Australia</a></li>
+                <li><a href="new-zealand.html">Study in New Zealand</a></li>
+                <li><a href="south-korea.html">Study in South Korea</a></li>
+              </ul>
+            </li>
+            <li class="menu_mm"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Home -->
+
+      <div class="home">
+        <div class="breadcrumbs_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Contact</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+
+      <div class="contact">
+        <!-- Contact Info -->
+
+        <div class="contact_info_container">
+          <div class="container">
+            <div class="row">
+              <!-- Contact Form -->
+              <div class="col-lg-6">
+                <div class="contact_form">
+                  <div class="contact_info_title">Contact Form</div>
+                  <form action="#" class="comment_form">
+                    <div>
+                      <div class="form_title">Name</div>
+                      <input
+                        type="text"
+                        class="comment_input"
+                        required="required"
+                      />
+                    </div>
+                    <div>
+                      <div class="form_title">Phone</div>
+                      <input
+                        type="number"
+                        class="comment_input"
+                        required="required"
+                      />
+                    </div>
+                    <div>
+                      <div class="form_title">Email</div>
+                      <input
+                        type="email"
+                        class="comment_input"
+                        required="required"
+                      />
+                    </div>
+                    <div>
+                      <div class="form_title">Message</div>
+                      <textarea
+                        class="comment_input comment_textarea"
+                        required="required"
+                      ></textarea>
+                    </div>
+                    <div>
+                      <button type="submit" class="comment_button trans_200">
+                        submit now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="col-lg-6">
+                <div class="contact_info">
+                  <div class="contact_info_title">Contact Info</div>
+                  <div class="contact_info_text">
+                    <p>
+                      Kindly enter your full name, contact details, and message.
+                      Our team will get in touch with you shortly to address
+                      your queries and provide the most relevant information.
+                    </p>
+                  </div>
+                  <div class="contact_info_location">
+                    <div class="contact_info_location_title">
+                      New York Office
+                    </div>
+                    <ul class="location_list">
+                      <li>
+                        <a href="mailto:info@achievementeducation.com"
+                          >info@achievementeducation.com</a
+                        >
+                      </li>
+                      <li>
+                        <a href="tel:+9779845608394">+(977) 9845608394</a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://maps.app.goo.gl/XGyFewnvFjbsLWPK6"
+                          target="_blank"
+                          >New Plaza sadak, Kathmandu, Nepal</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contact_info_location">
+                    <div class="contact_info_location_title">
+                      Australia Office
+                    </div>
+                    <ul class="location_list">
+                      <li>
+                        <a href="mailto:info@achievementeducation.com"
+                          >info@achievementeducation.com</a
+                        >
+                      </li>
+                      <li><a href="tel:+61294276814">+(61) 294 276 814</a></li>
+                      <li>
+                        <a
+                          href="https://maps.app.goo.gl/wKtzYg3iEtMimSxEA"
+                          target="_blank"
+                          >Haymarket, New South Wales, Australia</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="maps_section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="maps_title">Our Branch Locations</div>
+            </div>
+          </div>
+          <div class="row maps_row">
+            <!-- Nepal Branch -->
+            <div class="col-lg-6 col-md-12 maps_col">
+              <div class="map_container">
+                <h3 class="map_title">Nepal Branch Location</h3>
+                <div class="map_wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4708285489887!2d85.3206265762832!3d27.702745676185284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19003c0436d9%3A0xc03f02a84ed4245e!2sAchievement%20Education%20and%20Visa%20Services!5e0!3m2!1sen!2snp!4v1757969184649!5m2!1sen!2snp"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Australia Branch -->
+            <div class="col-lg-6 col-md-12 maps_col australia_map">
+              <div class="map_container">
+                <h3 class="map_title">Australia Branch Location</h3>
+                <div class="map_wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.4299875828065!2d151.2074585!3d-33.8785782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af044369beb1%3A0x3d37aaa68bf368d7!2sAchievement%20Education%20and%20Visa%20Services!5e0!3m2!1sen!2snp!4v1757969226077!5m2!1sen!2snp"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div
+          class="footer_background"
+          style="background-image: url(images/footer_background.png)"
+        ></div>
+        <div class="container">
+          <div class="row footer_row">
+            <div class="col">
+              <div class="footer_content">
+                <div class="row">
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer About -->
+                    <div class="footer_section footer_about">
+                      <div class="footer_logo_container">
+                        <a href="#">
+                          <div class="footer_logo_text">
+                            Achieve<span>ment</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer_about_text">
+                        <p>Shaping Global Futures with High Visa Success.</p>
+                      </div>
+                      <div class="footer_social">
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="fa fa-facebook" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="mailto: info@achievementeducation.com"
+                              ><i class="fa fa-envelope" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="fa fa-instagram" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="fa fa-twitter" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer Contact -->
+                    <div class="footer_section footer_contact">
+                      <div class="footer_title">Nepal</div>
+                      <div class="footer_contact_info">
+                        <ul>
+                          <li>
+                            <a href="mailto:info@achievementeducation.com"
+                              >info@achievementeducation.com</a
+                            >
+                          </li>
+                          <li>
+                            <a href="tel:+9779845608394">+(977) 9845608394</a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://maps.app.goo.gl/XGyFewnvFjbsLWPK6"
+                              target="_blank"
+                              >New Plaza sadak, Kathmandu, Nepal</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer Contact -->
+                    <div class="footer_section footer_contact">
+                      <div class="footer_title">Australia</div>
+                      <div class="footer_contact_info">
+                        <ul>
+                          <li>
+                            <a href="mailto:info@achievementeducation.com"
+                              >info@achievementeducation.com</a
+                            >
+                          </li>
+                          <li>
+                            <a href="tel:+61294276814">+(61) 294 276 814</a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://maps.app.goo.gl/wKtzYg3iEtMimSxEA"
+                              target="_blank"
+                              >Haymarket, New South Wales, Australia</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer links -->
+                    <div class="footer_section footer_links">
+                      <div class="footer_title">Quick Links</div>
+                      <div class="footer_links_container">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a href="australia.html">Universities</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row copyright_row">
+            <div class="col">
+              <div
+                class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start"
+              >
+                <div class="cr_text">
+                  Copyright © 2025. Achievement Education &amp; Visa Services.
+                </div>
+                <div class="ml-lg-auto cr_links">
+                  <ul class="cr_list">
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="styles/bootstrap4/popper.js"></script>
+    <script src="styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="plugins/easing/easing.js"></script>
+    <script src="plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+    <script src="plugins/marker_with_label/marker_with_label.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/uni.js"></script>
+  </body>
+</html>

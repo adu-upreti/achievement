@@ -1,0 +1,363 @@
+
+
+/* More specific selector to override existing styles */
+.menu_mm .university-toggle,
+.menu_nav .university-toggle,
+li.menu_mm .university-toggle {
+    
+    /* Force remove all backgrounds */
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    outline: none !important;
+    
+    /* Remove browser defaults */
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    
+    /* Remove shadows and other effects */
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 18px;
+    font-weight: 500;
+    color: #093558;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    text-decoration: none;
+}
+
+/* Also target different states */
+.menu_mm .university-toggle:hover,
+.menu_mm .university-toggle:focus,
+.menu_mm .university-toggle:active,
+.menu_mm .university-toggle:visited {
+    background: none !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.main_nav .university-toggle:hover {
+    color: #c9291d;
+    }
+
+.university-dropdown {
+    position: relative;
+}    
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.university-toggle.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.university-submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: slideDown 0.3s ease;
+}
+
+.university-submenu.show {
+    display: block;
+}
+
+.university-submenu li {
+    margin: 0;
+}
+
+.university-submenu a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.university-submenu a:hover {
+    background-color: #f8f9fa;
+    color: #093558;
+    border-left-color: #093558;
+    padding-left: 25px;
+}
+
+/* Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Desktop view (768px and above) - STABILITY FIXES */
+@media (min-width: 768px) {
+    
+    .university-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .university-toggle {
+        cursor: pointer;
+        position: relative;
+        padding-right: 15px;
+    }
+    
+    /* STABLE DROPDOWN POSITIONING */
+    .university-submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        z-index: 1000;
+        margin-top: 0; /* NO GAP */
+        border: 1px solid #e0e0e0;
+        
+        /* STABILITY: Add invisible hover area */
+        padding-top: 8px;
+        margin-top: 8px;
+        
+        /* SMOOTH TRANSITIONS */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+    
+    /* CREATE INVISIBLE BRIDGE */
+    .university-dropdown::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: transparent;
+        z-index: 999;
+    }
+    
+    /* HOVER EFFECTS WITH STABILITY */
+    .university-dropdown:hover .university-submenu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .university-dropdown:hover .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+    
+    /* FIRST ITEM OFFSET FOR PADDING */
+    .university-submenu li:first-child a {
+        margin-top: 8px;
+    }
+    
+    .university-submenu a {
+        white-space: nowrap;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    
+    .university-submenu li:last-child a {
+        border-bottom: none;
+    }
+    
+    /* FASTER DESKTOP ANIMATION */
+    .university-submenu {
+        animation: slideDownDesktop 0.15s ease;
+    }
+    
+    @keyframes slideDownDesktop {
+        from {
+            opacity: 0;
+            transform: translateY(-5px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Large desktop (1024px and above) */
+@media (min-width: 1024px) {
+    .university-submenu {
+        min-width: 220px;
+    }
+    
+    .university-submenu a {
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+    
+    .university-submenu a:hover {
+        padding-left: 27px;
+    }
+}
+
+/* Extra large desktop (1200px and above) */
+@media (min-width: 1200px) {
+    .university-submenu {
+        min-width: 240px;
+    }
+    
+    .university-submenu a {
+        padding: 16px 24px;
+        font-size: 16px;
+    }
+    
+    .university-submenu a:hover {
+        padding-left: 30px;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .university-submenu {
+        margin: 10px 0 0 0;
+    }
+    
+    .university-submenu a {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    .university-submenu a:hover {
+        padding-left: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .university-submenu a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    .university-submenu a:hover {
+        padding-left: 20px;
+    }
+}
+
+
+/* Mobile view CSS for university toggle */
+@media (max-width: 767px) {
+    
+    /* Mobile university toggle styling */
+    .menu_mm .university-toggle,
+    .menu_nav .university-toggle,
+    li.menu_mm .university-toggle {
+        
+        /* Force remove all backgrounds */
+        background: none !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        border: none !important;
+        outline: none !important;
+        
+        /* Remove browser defaults */
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        
+        /* Remove shadows and other effects */
+        box-shadow: none !important;
+        text-shadow: none !important;
+        
+        /* Mobile specific styling */
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+        text-decoration: none;
+        
+        /* Layout properties */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px 0;
+    }
+    
+    /* Mobile hover/active states */
+    .menu_mm .university-toggle:hover,
+    .menu_mm .university-toggle:focus,
+    .menu_mm .university-toggle:active,
+    .menu_mm .university-toggle:visited {
+        background: none !important;
+        background-color: transparent !important;
+        outline: none !important;
+        box-shadow: none !important;
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    /* Mobile dropdown arrow styling */
+    .menu_mm .dropdown-arrow {
+        font-size: 10px;
+        font-weight: 700;
+        margin-left: 8px;
+    }
+    
+    /* Mobile submenu styling */
+    .menu_mm .university-submenu {
+        margin-top: 8px;
+    }
+    
+    .menu_mm .university-submenu a {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        padding: 8px 15px;
+    }
+    
+    .menu_mm .university-submenu a:hover {
+        color: #c9291d;;
+        font-weight: 700;
+    }
+}
+
+/* Tablet view adjustments (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .menu_mm .university-toggle {
+        font-size: 15px;
+        padding: 14px 0;
+
+    }
+    
+    .menu_mm .university-submenu a {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+}
+

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Universities</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Unicat project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bootstrap4/bootstrap.min.css"
+    />
+    <link
+      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="plugins/colorbox/colorbox.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/OwlCarousel2-2.2.1/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/OwlCarousel2-2.2.1/animate.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/courses.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/courses_responsive.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/uni.css" />
+  </head>
+  <body>
+    <div class="super_container">
+      <!-- Header -->
+
+      <header class="header">
+        <!-- Top Bar -->
+        <div class="top_bar">
+          <div class="top_bar_container">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="top_bar_content d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <ul class="top_bar_contact_list">
+                      <li><div class="question">Have any questions?</div></li>
+                      <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div>+977 984-5608394</div>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div>info@achievementeducation.com</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="header_content d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="logo_container">
+                    <a href="index.html" class="logo">
+                      <img src="images/logo.svg" alt="Logo" class="logo_img" />
+                    </a>
+                  </div>
+                  <nav class="main_nav_contaner ml-auto">
+                    <ul class="main_nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active"><a href="about.html">About</a></li>
+                      <li class="menu_mm university-dropdown">
+                        <a
+                          href="#"
+                          class="university-toggle"
+                          onclick="toggleUniversityDropdown(event)"
+                        >
+                          Universities <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <ul class="university-submenu">
+                          <li><a href="uk.html">Study in UK</a></li>
+                          <li><a href="usa.html">Study in USA</a></li>
+                          <li><a href="canada.html">Study in Canada</a></li>
+                          <li>
+                            <a href="australia.html">Study in Australia</a>
+                          </li>
+                          <li>
+                            <a href="new-zealand.html">Study in New Zealand</a>
+                          </li>
+                          <li>
+                            <a href="south-korea.html">Study in South Korea</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="hamburger menu_mm">
+                      <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Menu -->
+
+      <div
+        class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400"
+      >
+        <div class="menu_close_container">
+          <div class="menu_close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <nav class="menu_nav">
+          <ul class="menu_mm">
+            <li class="menu_mm"><a href="index.html">Home</a></li>
+            <li class="menu_mm"><a href="about.html">About</a></li>
+            <li class="menu_mm university-dropdown">
+              <a
+                href="#"
+                class="university-toggle"
+                onclick="toggleUniversityDropdown(event)"
+              >
+                Universities <span class="dropdown-arrow">▼</span>
+              </a>
+              <ul class="university-submenu">
+                <li><a href="uk.html">Study in UK</a></li>
+                <li><a href="usa.html">Study in USA</a></li>
+                <li><a href="canada.html">Study in Canada</a></li>
+                <li><a href="australia.html">Study in Australia</a></li>
+                <li><a href="new-zealand.html">Study in New Zealand</a></li>
+                <li><a href="south-korea.html">Study in South Korea</a></li>
+              </ul>
+            </li>
+            <li class="menu_mm"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Home -->
+
+      <div class="home">
+        <div class="breadcrumbs_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Australia</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Courses -->
+
+      <div class="courses">
+        <div class="container">
+          <div class="row">
+            <!-- Courses Main Content -->
+            <div class="col-lg-8">
+              <div class="courses_search_container">
+                <form
+                  action="#"
+                  id="courses_search_form"
+                  class="courses_search_form d-flex flex-row align-items-center justify-content-start"
+                >
+                  <input
+                    type="search"
+                    class="courses_search_input"
+                    placeholder="Search Courses"
+                    required="required"
+                  />
+                  <select
+                    id="courses_search_select"
+                    class="courses_search_select courses_search_input"
+                  >
+                    <option>Countries</option>
+                    <option>South Korea</option>
+                    <option>Unites State</option>
+                    <option>United Kingdom</option>
+                    <option>New Zealand</option>
+                    <option>Canada</option>
+                  </select>
+                  <button action="submit" class="courses_search_button ml-auto">
+                    search now
+                  </button>
+                </form>
+              </div>
+              <div class="courses_container">
+                <div class="row courses_row">
+                  <!-- Course -->
+                  <div class="col-lg-6 course_col">
+                    <div class="course">
+                      <div class="course_image">
+                        <img src="images/VU.svg" alt="" />
+                      </div>
+                      <div class="course_body">
+                        <h3 class="course_title">
+                          <a href="australia.html"
+                            >Victoria University <br />
+                            (VU)</a
+                          >
+                        </h3>
+                        <div class="course_teacher">
+                          Sydney, Brisbane - Australia
+                        </div>
+                      </div>
+                      <div class="course_footer">
+                        <div
+                          class="course_footer_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                          <div class="course_price ml-auto">Learn more</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course -->
+                  <div class="col-lg-6 course_col">
+                    <div class="course">
+                      <div class="course_image">
+                        <img src="images/ACU.svg" alt="" />
+                      </div>
+                      <div class="course_body">
+                        <h3 class="course_title">
+                          <a href="australia.html"
+                            >Australian Catholic University (ACU)</a
+                          >
+                        </h3>
+                        <div class="course_teacher">
+                          Melbourne, Brisbane, Canberra - Australia
+                        </div>
+                      </div>
+                      <div class="course_footer">
+                        <div
+                          class="course_footer_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                          <div class="course_price ml-auto">Learn more</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course -->
+                  <div class="col-lg-6 course_col">
+                    <div class="course">
+                      <div class="course_image">
+                        <img src="images/APIC.svg" alt="" />
+                      </div>
+                      <div class="course_body">
+                        <h3 class="course_title">
+                          <a href="australia.html"
+                            >Asia Pacific International College (APIC)</a
+                          >
+                        </h3>
+                        <div class="course_teacher">
+                          Sydney, Brisbane, Melbourne - Australia
+                        </div>
+                      </div>
+                      <div class="course_footer">
+                        <div
+                          class="course_footer_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                          <div class="course_price ml-auto">Learn more</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course -->
+                  <div class="col-lg-6 course_col">
+                    <div class="course">
+                      <div class="course_image">
+                        <img src="images/UTAS.svg" alt="" />
+                      </div>
+                      <div class="course_body">
+                        <h3 class="course_title">
+                          <a href="australia.html"
+                            >University of Tasmania <br />
+                            (UTAS)</a
+                          >
+                        </h3>
+                        <div class="course_teacher">Sydney - Australia</div>
+                      </div>
+                      <div class="course_footer">
+                        <div
+                          class="course_footer_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                          <div class="course_price ml-auto">Learn more</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course -->
+                  <div class="col-lg-6 course_col">
+                    <div class="course">
+                      <div class="course_image">
+                        <img src="images/ASA.svg" alt="" />
+                      </div>
+                      <div class="course_body">
+                        <h3 class="course_title">
+                          <a href="australia.html"
+                            >ASA Institute of Higher Education (ASA)</a
+                          >
+                        </h3>
+                        <div class="course_teacher">
+                          Sydney, New South Wales - Australia
+                        </div>
+                      </div>
+                      <div class="course_footer">
+                        <div
+                          class="course_footer_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                          <div class="course_price ml-auto">Learn more</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course -->
+                  <div class="col-lg-6 course_col">
+                    <div class="course">
+                      <div class="course_image">
+                        <img src="images/HELI.svg" alt="" />
+                      </div>
+                      <div class="course_body">
+                        <h3 class="course_title">
+                          <a href="australia.html"
+                            >Higher Education Leadership Institute (HELI)</a
+                          >
+                        </h3>
+                        <div class="course_teacher">Melbourne - Australia</div>
+                      </div>
+                      <div class="course_footer">
+                        <div
+                          class="course_footer_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                          <div class="course_price ml-auto">Learn more</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pagination_row">
+                  <div class="col">
+                    <div
+                      class="pagination_container d-flex flex-row align-items-center justify-content-start"
+                    >
+                      <ul class="pagination_list">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li>
+                          <a href="#"
+                            ><i class="fa fa-angle-right" aria-hidden="true"></i
+                          ></a>
+                        </li>
+                      </ul>
+                      <div class="courses_show_container ml-auto clearfix">
+                        <div class="courses_show_text">
+                          Showing <span class="courses_showing">1-6</span> of
+                          <span class="courses_total">26</span> results:
+                        </div>
+                        <div class="courses_show_content">
+                          <span>Show: </span>
+                          <select
+                            id="courses_show_select"
+                            class="courses_show_select"
+                          >
+                            <option>06</option>
+                            <option>12</option>
+                            <option>24</option>
+                            <option>36</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Courses Sidebar -->
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <!-- Categories -->
+                <div class="sidebar_section">
+                  <div class="sidebar_section_title">Countries</div>
+                  <div class="sidebar_categories">
+                    <ul>
+                      <li><a href="south-korea.html">South Korea</a></li>
+                      <li><a href="usa.html">United State</a></li>
+                      <li><a href="uk.html">United Kingdom</a></li>
+                      <li><a href="new-zealand.html">New Zealand</a></li>
+                      <li><a href="canada.html">Canada</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Latest Course -->
+                <div class="sidebar_section">
+                  <div class="sidebar_section_title">Top Universities</div>
+                  <div class="sidebar_latest">
+                    <!-- Latest Course -->
+                    <div
+                      class="latest d-flex flex-row align-items-start justify-content-start"
+                    >
+                      <div class="latest_image">
+                        <div><img src="images/VU.svg" alt="" /></div>
+                      </div>
+                      <div class="latest_content">
+                        <div class="latest_title">
+                          <a href="australia.html">Victoria University</a>
+                        </div>
+                        <div class="latest_price">Learn more.</div>
+                      </div>
+                    </div>
+
+                    <!-- Latest Course -->
+                    <div
+                      class="latest d-flex flex-row align-items-start justify-content-start"
+                    >
+                      <div class="latest_image">
+                        <div><img src="images/UTAS.svg" alt="" /></div>
+                      </div>
+                      <div class="latest_content">
+                        <div class="latest_title">
+                          <a href="australia.html">University of Tasmania</a>
+                        </div>
+                        <div class="latest_price">Learn more</div>
+                      </div>
+                    </div>
+
+                    <!-- Latest Course -->
+                    <div
+                      class="latest d-flex flex-row align-items-start justify-content-start"
+                    >
+                      <div class="latest_image">
+                        <div><img src="images/ACU.svg" alt="" /></div>
+                      </div>
+                      <div class="latest_content">
+                        <div class="latest_title">
+                          <a href="australia.html"
+                            >Australian Catholic University</a
+                          >
+                        </div>
+                        <div class="latest_price">Learn more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="sidebar_section">
+                  <div class="sidebar_section_title">Sucess Gallery</div>
+                  <div class="sidebar_gallery">
+                    <ul
+                      class="gallery_items d-flex flex-row align-items-start justify-content-between flex-wrap"
+                    >
+                      <li class="gallery_item">
+                        <div
+                          class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center"
+                        >
+                          +
+                        </div>
+                        <a class="colorbox" href="images/gallery_1_large.svg">
+                          <img src="images/gallery_1.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="gallery_item">
+                        <div
+                          class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center"
+                        >
+                          +
+                        </div>
+                        <a class="colorbox" href="images/gallery_2_large.svg">
+                          <img src="images/gallery_2.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="gallery_item">
+                        <div
+                          class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center"
+                        >
+                          +
+                        </div>
+                        <a class="colorbox" href="images/gallery_3_large.svg">
+                          <img src="images/gallery_3.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="gallery_item">
+                        <div
+                          class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center"
+                        >
+                          +
+                        </div>
+                        <a class="colorbox" href="images/gallery_4_large.svg">
+                          <img src="images/gallery_4.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="gallery_item">
+                        <div
+                          class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center"
+                        >
+                          +
+                        </div>
+                        <a class="colorbox" href="images/gallery_5_large.svg">
+                          <img src="images/gallery_5.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="gallery_item">
+                        <div
+                          class="gallery_item_overlay d-flex flex-column align-items-center justify-content-center"
+                        >
+                          +
+                        </div>
+                        <a class="colorbox" href="images/gallery_6_large.svg">
+                          <img src="images/gallery_6.svg" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="sidebar_section">
+                  <div class="sidebar_section_title">City</div>
+                  <div class="sidebar_tags">
+                    <ul class="tags_list">
+                      <li><a href="#">Sydney</a></li>
+                      <li><a href="#">Melbourne</a></li>
+                      <li><a href="#">New South Wales</a></li>
+                      <li><a href="#">Brisbane</a></li>
+                      <li><a href="#">Canberra</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Banner -->
+                <div class="sidebar_section">
+                  <div
+                    class="sidebar_banner d-flex flex-column align-items-center justify-content-center text-center"
+                  >
+                    <div
+                      class="sidebar_banner_background"
+                      style="background-image: url(images/banner_1.jpg)"
+                    ></div>
+                    <div class="sidebar_banner_overlay"></div>
+                    <div class="sidebar_banner_content">
+                      <div class="banner_title">Brochure</div>
+                      <div class="banner_button">
+                        <a href="#">download now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div
+          class="footer_background"
+          style="background-image: url(images/footer_background.png)"
+        ></div>
+        <div class="container">
+          <div class="row footer_row">
+            <div class="col">
+              <div class="footer_content">
+                <div class="row">
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer About -->
+                    <div class="footer_section footer_about">
+                      <div class="footer_logo_container">
+                        <a href="#">
+                          <div class="footer_logo_text">
+                            Achieve<span>ment</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer_about_text">
+                        <p>Shaping Global Futures with High Visa Success.</p>
+                      </div>
+                      <div class="footer_social">
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="fa fa-facebook" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="mailto: info@achievementeducation.com"
+                              ><i class="fa fa-envelope" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="fa fa-instagram" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="fa fa-twitter" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer Contact -->
+                    <div class="footer_section footer_contact">
+                      <div class="footer_title">Nepal</div>
+                      <div class="footer_contact_info">
+                        <ul>
+                          <li>
+                            <a href="mailto:info@achievementeducation.com"
+                              >info@achievementeducation.com</a
+                            >
+                          </li>
+                          <li>
+                            <a href="tel:+9779845608394">+(977) 9845608394</a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://maps.app.goo.gl/XGyFewnvFjbsLWPK6"
+                              target="_blank"
+                              >New Plaza sadak, Kathmandu, Nepal</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer Contact -->
+                    <div class="footer_section footer_contact">
+                      <div class="footer_title">Australia</div>
+                      <div class="footer_contact_info">
+                        <ul>
+                          <li>
+                            <a href="mailto:info@achievementeducation.com"
+                              >info@achievementeducation.com</a
+                            >
+                          </li>
+                          <li>
+                            <a href="tel:+61294276814">+(61) 294 276 814</a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://maps.app.goo.gl/wKtzYg3iEtMimSxEA"
+                              target="_blank"
+                              >Haymarket, New South Wales, Australia</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 footer_col">
+                    <!-- Footer links -->
+                    <div class="footer_section footer_links">
+                      <div class="footer_title">Quick Links</div>
+                      <div class="footer_links_container">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a href="australia.html">Universities</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row copyright_row">
+            <div class="col">
+              <div
+                class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start"
+              >
+                <div class="cr_text">
+                  Copyright © 2025. Achievement Education &amp; Visa Services.
+                </div>
+                <div class="ml-lg-auto cr_links">
+                  <ul class="cr_list">
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="styles/bootstrap4/popper.js"></script>
+    <script src="styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="plugins/easing/easing.js"></script>
+    <script src="plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/uni.js"></script>
+  </body>
+</html>
